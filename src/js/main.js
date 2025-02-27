@@ -247,6 +247,12 @@ function octalADecimal(octal) {
 
 // Hexadecimal a Decimal
 function hexadecimalADecimal(hex) {
+    // Validate input
+    if (!/^[0-9A-Fa-f]+$/.test(hex)) {
+        console.log("Error: Invalid hexadecimal input");
+        document.getElementById("proceso").innerHTML = "No es un número hexadecimal válido";
+        return "Error";
+    }
     let resultado = 0;
     let imprimir = "";
     let base = 1;
