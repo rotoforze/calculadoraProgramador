@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/main.js"></script>
+
+</head>
+<body>
+    <select name="seleccion" id="sel">
+        <option value="binToDec">Binario a Decimal</option>
+        <option value="binToOct">Binario a Octal</option>
+        <option value="binToHex">Binario a Hexadecimal</option>
+
+        <option value="decToBin">Decimal a Binario</option>
+        <option value="decToOct">Decimal a Octal</option>
+        <option value="decToHex">Decimal a Hexadecimal</option>
+
+        <option value="octToBin">Octal a Binario</option>
+        <option value="octToDec">Octal a Decimal</option>
+        <option value="octToBin">Octal a Hexadecimal</option>
+
+        
+        <option value="hexToBin">Hexadecimal a Binario</option>
+        <option value="hexToDec">Hexadecimal a Decimal</option>
+        <option value="hexToOct">Hexadecimal a Octal</option>
+    </select>
+    <input type="number" id="numero">
+    <button onclick="convertir()">Convertir</button>
+    <div id="contenedor">
+        <a>Resultado: <div id="resultado"></div></a>
+        <a>Proceso:</a>
+        <div id="proceso"></div>
+    </div>
+</body>
+</html>
